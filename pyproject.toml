@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "avnwx"
+version = "0.1.0"
+description = "Interacts with NOAA's National Weather Service APIs"
+authors = ["Matthew J. Lenzo"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.31"
+
+[tool.poetry.group.dev.dependencies]
+black = "23.12"
+pytest = "7.4"
+
+[tool.poetry.scripts]
+avnwx = "avnwx.cli:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
